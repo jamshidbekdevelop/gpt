@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-min-width: 300px;
-  max-width: ${({ width }) => (width ? `${width}px` : "340px")};
-  height: ${({ height }) => (height ? `${height}px` : "324px")};
+  min-width: 300px;
+  max-width: ${({ width }) => (width ? `${width}px` : "400px")};
+  height: fit-content;
   width: 100%;
 `;
 export const Image = styled.img`
@@ -12,12 +12,12 @@ export const Image = styled.img`
 `;
 export const Bottom = styled.div`
   width: 100%;
-  height: ${({ height }) => (height ? "408px" : "194px")};
   padding: ${({ height }) => (height ? "30px" : "20px")};
   box-sizing: border-box;
   background: #042c54;
   display: flex;
   flex-direction: column;
+  height: fit-content;
 `;
 export const P = styled.p`
   font-family: var(--font-family);

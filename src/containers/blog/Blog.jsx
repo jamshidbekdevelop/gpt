@@ -8,13 +8,13 @@ import img4 from "../../assets/forth.png";
 import img5 from "../../assets/fifth.png";
 const Blog = () => {
   return (
-    <Container>
+    <Container id="blog">
       <Header>A lot is happening, We are blogging about it.</Header>
       <Box>
         <Left>
           <Article
             height={697}
-            width={418}
+            width={518}
             img={img1}
             text1={"Sep 26, 2021"}
             text2={"GPT-3 and Open  AI is the future. Let us exlore how it is?"}

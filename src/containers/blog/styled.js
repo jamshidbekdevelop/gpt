@@ -33,22 +33,33 @@ export const Header = styled.div`
   -text-fill-color: transparent;
 `;
 export const Box = styled.div`
+  margin: auto;
+  max-width: 1500px;
   width: 100%;
   margin-top: 6rem;
   display: flex;
-  gap: 50px;
+  justify-content: space-around;
+  gap: 2rem;
   flex-wrap: wrap;
-  background: blue;
+  @media (max-width: 990px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 `;
 export const Left = styled.span`
-  display: inline;
-  background-color: red;
+  @media (max-width: 990px) {
+    margin: auto;
+  }
 `;
 export const Right = styled.div`
-  display: flex;
-  gap: 50px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
-  @media (max-width: 550px) {
-    justify-content: center;
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 `;
