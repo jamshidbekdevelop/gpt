@@ -4,18 +4,26 @@ export const Container = styled.div`
   display: flex;
   margin: 4rem 6rem;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 1050px) {
+    margin: 2rem 4rem;
+  }
+  @media (max-width: 550px) {
+    margin: 2rem;
+  }
 `;
 
 export const Heading = styled.div`
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   flex-wrap: wrap;
-  max-width: 550px;
+  min-width: 300px;
+
 `;
 export const Text = styled.h1`
-  max-width: 700px;
+  max-width: 550px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 800;
@@ -38,8 +46,7 @@ export const P = styled.p`
 `;
 
 export const Features = styled.div`
-  background: red;
-  flex: 3;
+  flex: 1;
   display: flex;
   flex-direction: column;
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Features, Heading, P, Text } from "./styled";
+import { Feature } from "../../containers";
 // import { Feature } from "../../containers";
 
 const FeatureData = [
@@ -36,7 +37,9 @@ const Featuriess = () => {
         <P>Request Early Access to Get Started</P>
       </Heading>
       <Features>
-        {/* <Feature */}
+        {FeatureData.map(({ id, title, text }) => {
+          return <Feature size={18} mw={390} key={id} title={title} text={text} />;
+        })}
       </Features>
     </Container>
   );
