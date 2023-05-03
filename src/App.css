@@ -7,6 +7,7 @@
 
 body {
   background: var(--color-bg);
+  position: relative;
 }
 
 a {
@@ -14,57 +15,39 @@ a {
   text-decoration: none;
 }
 .gradient_bg {
-  /* ff 3.6+ */
   background: -moz-radial-gradient(
     circle at 3% 25%,
     rgba(4, 12, 24, 1) 0%,
-    rgba(0, 188, 212, 1) 50%,
-    /* rgba(238, 130, 238, 1) 75%,  */
-    /* rgba(10, 25, 48) 100%, */
-    rgb(11, 51, 113) 100%,
-
+    rgb(4, 53, 59) 50%,
+    rgb(20, 26, 35) 100%
   );
 
-  /* safari 5.1+,chrome 10+ */
   background: -webkit-radial-gradient(
     circle at 3% 25%,
     rgba(4, 12, 24, 1) 0%,
-    rgba(0, 188, 212, 1) 50%,
-    /* rgba(238, 130, 238, 1) 75%,  */
-    rgb(11, 51, 113) 100%,
+    rgb(4, 53, 59) 50%,
+    rgb(20, 26, 35) 100%
   );
 
-  /* opera 11.10+ */
   background: -o-radial-gradient(
     circle at 3% 25%,
     rgba(4, 12, 24, 1) 0%,
-    rgba(0, 188, 212, 1) 50%,
-    /* rgba(238, 130, 238, 1) 75%, */
-    /* rgba(10, 25, 48) 100%, */
-    rgb(11, 51, 113) 100%,
-
+    rgb(4, 53, 59) 50%,
+    rgb(20, 26, 35) 100%
   );
 
-  /* ie 10+ */
   background: -ms-radial-gradient(
     circle at 3% 25%,
     rgba(4, 12, 24, 1) 0%,
-    rgba(0, 188, 212, 1) 50%,
-    /* rgba(238, 130, 238, 1) 75%, */
-    /* rgba(10, 25, 48) 100%, */
-    rgb(11, 51, 113) 100%,
-
+    rgb(4, 53, 59) 50%,
+    rgb(20, 26, 35) 100%
   );
 
-  /* global 92%+ browsers support */
   background: radial-gradient(
     circle at 3% 25%,
     rgba(4, 12, 24, 1) 0%,
-    rgba(0, 188, 212, 1) 50%,
-    /* rgba(238, 130, 238, 1) 75%,  */
-    /* rgb(10, 25, 48) 100%, */
-    rgb(11, 51, 113) 100%,
-
+    rgb(4, 53, 59) 50%,
+    rgb(20, 26, 35) 100%
   );
 }
 
@@ -105,19 +88,25 @@ a {
     transform: scale(1);
   }
 }
-@media screen and (max-width:700px){
-    .section_padding {
-        padding: 4rem;
-      }
-      .section_margin {
-        margin: 4rem;
-      }
+@media screen and (max-width: 700px) {
+  .section_padding {
+    padding: 4rem;
+  }
+  .section_margin {
+    margin: 4rem;
+  }
 }
-@media screen and (max-width:550px){
-    .section_padding {
-        padding: 4rem 2rem;
-      }
-      .section_margin {
-        margin: 4rem 2rem;
-      }
+@media screen and (max-width: 550px) {
+  .section_padding {
+    padding: 4rem 2rem;
+  }
+  .section_margin {
+    margin: 4rem 2rem;
+  }
+}
+.ab {
+  top: 0;
+  position: sticky;
+  background-color: #040c18;
+  z-index: 999;
 }

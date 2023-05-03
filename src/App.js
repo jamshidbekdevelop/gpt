@@ -12,10 +12,10 @@ import "./index.css";
 const App = () => {
   return (
     <div className="gradient_bg App">
-      <div>
+      <div className="ab">
         <Navbar />
-        <Header />
       </div>
+        <Header />
       <Brand />
       <WhatGPT3 />
       <Featuriess />
